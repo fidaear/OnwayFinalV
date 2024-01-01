@@ -1,0 +1,70 @@
+.p{
+    margin: 0 6px;
+}
+.profile{
+    min-height: 88vh;
+}
+.comp{
+    min-height: 200px;
+}
+.infos{
+    min-height: 430px;
+}
+.infos p{
+    text-align: justify;
+}
+.job-p{
+    min-height: 430px;
+    
+}
+.job-p .jobs{
+    overflow-y: scroll;
+    max-height: 300px;
+}
+.picture{
+    padding: 2px;
+    border: 2px solid #000;
+}
+.line{
+    position: relative;
+    display: inline;
+}
+.line::before{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 75%;
+    height: 3px;
+    background: #008E82;
+}
+.line::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 45%;
+    height: 3px;
+    background: #008E82;
+}
+
+#output-container{
+    margin-top: 10px;
+    min-height: 50px;
+}
+.output-item {
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+}
+.dl{
+    float: right;
+    margin-right: 13px;
+}

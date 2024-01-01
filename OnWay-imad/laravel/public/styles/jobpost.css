@@ -1,0 +1,1366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.section{
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0;
+}
+
+/*.....................................bell button-----------------------------------------------*/
+.buttonbl {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 253, 253);
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: .3s;
+    border: none;
+  }
+
+  .bell {
+    width: 18px;
+  }
+
+  .bell path {
+    fill: rgb(0, 0, 0);
+  }
+
+  .buttonbl:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .buttonbl:hover .bell {
+    animation: bellRing 0.9s both;
+  }
+
+  /* bell ringing animation keyframes*/
+  @keyframes bellRing {
+    0%,
+    100% {
+      transform-origin: top;
+    }
+
+    15% {
+      transform: rotateZ(10deg);
+    }
+
+    30% {
+      transform: rotateZ(-10deg);
+    }
+
+    45% {
+      transform: rotateZ(5deg);
+    }
+
+    60% {
+      transform: rotateZ(-5deg);
+    }
+
+    75% {
+      transform: rotateZ(2deg);
+    }
+  }
+  .buttonbl:active {
+    transform: scale(0.8);
+  }
+  /*----------------------------------------end bel--------------------------------------------------------*/
+/*----------------------------------------savebtn--------------------------------------------------------*/
+.rightnv{
+    margin-right: 30px;
+  }
+
+  .bookmarkBtn {
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    background-color: rgb(255, 252, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    margin-top: 7px;
+  }
+
+  .IconContainer {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to bottom, rgb(255, 136, 255),rgb(172, 70, 255));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: .3s;
+  }
+
+  .icon {
+    border-radius: 1px;
+  }
+
+  .text {
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    transition-duration: .3s;
+    font-size: 1.04em;
+  }
+
+  .bookmarkBtn:hover .IconContainer {
+    width: 90px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+
+  .bookmarkBtn:hover .text {
+    transform: translate(10px);
+    width: 0;
+    font-size: 0;
+    transition-duration: .3s;
+  }
+
+  .bookmarkBtn:active {
+    transform: scale(0.95);
+    transition-duration: .3s;
+  }
+  /*----------------------------------------end savebtn--------------------------------------------------------*/
+
+
+/*--------------------------------------------------------body------------------------------------------*/
+body {
+    background-color: #C2FCF3;
+    color: #fff;
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+
+
+
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+  height: 20vh;
+}
+
+.searchjb {
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: 158px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-right: 133px;
+  margin-left: -300px;
+  width: 930px;
+}
+ .input{
+
+  width: 780px;
+}
+.input-group .inputplace{
+  margin-left: 70px;
+  width: 780px;
+}
+
+
+.input,
+.inputplace {
+  min-height: 50px;
+  max-width: 1000px;
+  padding: 0 1rem;
+  color: #111;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  background-color: #fff;
+
+}
+
+.inputplace {
+  margin-left: 0;
+  z-index: 3;
+}
+
+.button--submit {
+  min-height: 50px;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: #fff;
+  color: #111;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.button--submit:hover {
+  background-color: #C2FCF3;
+}
+
+.input:focus, .input:focus-visible, .inputplace:focus, .inputplace:focus-visible {
+  border-color: #56C4B7;
+  outline: none;
+  background-color: #fff;
+}
+
+.fndjob {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.fndjob input {
+  cursor: pointer;
+  background-color: #008E82;
+  border-radius: 7px;
+  box-shadow: #008E82 0px 2px 0px 0px;
+  padding: 15px;
+  width: 154px;
+  height: 49px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+.fndjob input:hover {
+  background-color: #006A5B;
+}
+
+.label {
+  background-color: white;
+  padding: 5px;
+  font-weight: bolder;
+  color: black;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Input Place */
+.inputplace {
+  min-height: 50px;
+  max-width: 340px;
+  padding: 0 1rem;
+  color: #111;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.button--submit:hover {
+  background-color: #C2FCF3;
+}
+
+.inputplace:focus, .inputplace:focus-visible {
+  border-color: #56C4B7;
+  outline: none;
+  background-color: #fff;
+}
+/*..........................................................button of get-----------------------------*/
+.rquest button {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #008E82;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: -19px;
+ }
+
+ .rquest button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+
+ .rquest button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+ }
+
+ .rquest button:hover span {
+  padding-right: 15px;
+ }
+
+ .rquest button:hover span:after {
+  opacity: 1;
+  right: 0;
+ }
+/*----------------------------------------end main--------------------------------------------------------*/
+
+.label {
+  background-color: white;
+  padding: 5px;
+  font-weight: bolder;
+  color: black;
+  border-radius: 5px;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+
+.filter {
+    margin-top: -70px;
+    padding-left: 60px;
+}
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 400px;
+    font-size: 14px;
+  }
+
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .radio-inputs .radio input {
+    display: none;
+  }
+
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+  }
+
+  .radio-inputs .radio input:checked + .name {
+    background-color: #56C4B7;
+    font-weight: 600;
+    color: white;
+  }
+  .main .fndjob{
+    margin-top: -390px;
+    margin-right: -180px;
+    margin-left: 30px;
+  }
+  .main .fndjob input{
+    margin-top: -100px;
+    margin-right: -80px;
+    cursor: pointer;
+    z-index: 9999;
+    position: relative;
+  background-color: #008E82;
+  border-radius: 17px;
+  box-shadow: #008E82 0px 2px 0px 0px;
+  padding: 15px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 154px;
+  height: 49px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  }
+
+
+  /*---------------------------------profil icon------------------------------------*/
+  .prflicon{
+    background-color: #56C4B7;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    border-radius: 50px;
+    margin-right: -30px;
+  }
+  /*------------------------------------filterdetailles--------------------------------*/
+  .filter-search{
+    margin-top: -40px;
+    margin-left:480px;
+  }
+  .filter-search .radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 570px;
+    font-size: 14px;
+  }
+
+  .filter-search .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .filter-search .radio-inputs .radio input {
+    display: none;
+  }
+
+  .filter-search .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+  }
+
+  .filter-search .radio-inputs .radio input:checked + .name {
+    background-color: black;
+    font-weight: 600;
+    color: rgb(248, 238, 238);
+  }
+  /*------------------------------------job anounce------------------------*/
+
+.job-postes .propo{
+  white-space: nowrap;
+  font-size: 12px;
+  margin-left: -10px;
+  cursor: pointer;
+}
+.job-postes .propo M{
+  color: #008E82;
+  margin-right: 9px;
+}
+
+  .task {
+    position: relative;
+    color: #2e2e2f;
+    cursor: move;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+
+    margin-bottom: 1rem;
+    border: 3px dashed transparent;
+    max-width: 400px;
+  }
+
+
+
+  .task p {
+    font-size: 15px;
+    margin: 1.2rem 0;
+  }
+
+  .tag {
+    border-radius: 100px;
+    padding: 4px 43px;
+    font-size: 12px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: -40px;
+    margin-left: 26px;
+  }
+
+
+  .tags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .options {
+    background: transparent;
+    border: 0;
+    color: #c4cad3;
+    font-size: 17px;
+  }
+
+  .options svg {
+    fill: #9fa4aa;
+    width: 20px;
+  }
+
+  .Details .stats {
+    position: relative;
+    width: 100%;
+    color: #9fa4aa;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 32px;
+
+  }
+  .Details .ovproduct{
+    color: #111;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .stats div {
+    margin-right: 1rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .Details .btnsbm{
+    margin-top: 76px;
+    margin-left: 340px;
+
+  }
+  /*--------------------------------------savebtnpost------------------------------------------------*/
+  .Details .svpost{
+    margin-left: 10px;
+    margin-top: -28px;
+  }
+  .svpost .bookmark {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #checkboxInput {
+    display: none;
+  }
+
+  .svgIcon {
+    height: 20px;
+  }
+
+  .svgIcon path {
+    fill: rgb(153, 153, 153);
+  }
+
+  .bookmark::before {
+    content: "\002B";
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    top: 1px;
+  }
+
+  #checkboxInput:checked + .bookmark::before {
+    content: "\2713";
+    font-size: 0.70em;
+    top: 5px;
+  }
+
+  #checkboxInput:checked + .bookmark .svgIcon path {
+    fill: rgb(121, 199, 3);
+  }
+
+  #checkboxInput:active + .bookmark .svgIcon path {
+    fill: rgb(204, 204, 204);
+  }
+
+  .bookmark::after {
+    content: "";
+    background-color: rgba(56, 105, 0, 0.342);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  #checkboxInput:checked + .bookmark::after {
+    animation: puff-out-center .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+  }
+
+  @keyframes puff-out-center {
+    0% {
+      transform: scale(1);
+      filter: blur(0px);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(9);
+      filter: blur(1px);
+      opacity: 0;
+    }
+  }
+
+  /*.............................................end savebtnpost------------------------------------*/
+  .stats svg {
+    margin-right: 5px;
+    height: 100%;
+    stroke: #9fa4aa;
+  }
+
+    .intres{
+     display: inline-block;
+     margin-bottom: 10px;
+
+
+  }
+  .intres .spesific{
+    background-color:#C2FCF3 ;
+    border-radius: 2px;
+    background-size: cover;
+
+
+  }
+  .intres .spesific h4{
+    margin: 10px;
+  }
+  /*-----------------------------------------rating---------------------------*/
+  .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    --stroke: #666;
+    --fill: #ffc73a;
+    padding-right: 25px;
+  }
+  .star-rating {
+    font-size: 26px;
+    color: #ffd700;
+
+  }
+
+
+  .ui-bookmark {
+    --icon-size: 24px;
+    --icon-secondary-color: rgb(77, 77, 77);
+    --icon-hover-color: rgb(97, 97, 97);
+    --icon-primary-color: gold;
+    --icon-circle-border: 1px solid var(--icon-primary-color);
+    --icon-circle-size: 35px;
+    --icon-anmt-duration: 0.3s;
+  }
+
+  .ui-bookmark input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: none;
+  }
+
+  .ui-bookmark .bookmark {
+    width: var(--icon-size);
+    height: auto;
+    fill: var(--icon-secondary-color);
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+  }
+
+  .bookmark::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    -webkit-box-shadow: 0 30px 0 -4px var(--icon-primary-color),
+      30px 0 0 -4px var(--icon-primary-color),
+      0 -30px 0 -4px var(--icon-primary-color),
+      -30px 0 0 -4px var(--icon-primary-color),
+      -22px 22px 0 -4px var(--icon-primary-color),
+      -22px -22px 0 -4px var(--icon-primary-color),
+      22px -22px 0 -4px var(--icon-primary-color),
+      22px 22px 0 -4px var(--icon-primary-color);
+    box-shadow: 0 30px 0 -4px var(--icon-primary-color),
+      30px 0 0 -4px var(--icon-primary-color),
+      0 -30px 0 -4px var(--icon-primary-color),
+      -30px 0 0 -4px var(--icon-primary-color),
+      -22px 22px 0 -4px var(--icon-primary-color),
+      -22px -22px 0 -4px var(--icon-primary-color),
+      22px -22px 0 -4px var(--icon-primary-color),
+      22px 22px 0 -4px var(--icon-primary-color);
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+
+  .bookmark::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: var(--icon-circle-border);
+    opacity: 0;
+  }
+
+  /* actions */
+
+  .ui-bookmark:hover .bookmark {
+    fill: var(--icon-hover-color);
+  }
+
+  .ui-bookmark input:checked + .bookmark::after {
+    -webkit-animation: circles var(--icon-anmt-duration)
+      cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    animation: circles var(--icon-anmt-duration)
+      cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    -webkit-animation-delay: var(--icon-anmt-duration);
+    animation-delay: var(--icon-anmt-duration);
+  }
+
+  .ui-bookmark input:checked + .bookmark {
+    fill: var(--icon-primary-color);
+    -webkit-animation: bookmark var(--icon-anmt-duration) forwards;
+    animation: bookmark var(--icon-anmt-duration) forwards;
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+
+  .ui-bookmark input:checked + .bookmark::before {
+    -webkit-animation: circle var(--icon-anmt-duration)
+      cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    animation: circle var(--icon-anmt-duration)
+      cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    -webkit-animation-delay: var(--icon-anmt-duration);
+    animation-delay: var(--icon-anmt-duration);
+  }
+
+  @-webkit-keyframes bookmark {
+    50% {
+      -webkit-transform: scaleY(0.6);
+      transform: scaleY(0.6);
+    }
+
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+    }
+  }
+
+  @keyframes bookmark {
+    50% {
+      -webkit-transform: scaleY(0.6);
+      transform: scaleY(0.6);
+    }
+
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+    }
+  }
+
+  @-webkit-keyframes circle {
+    from {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+
+    90% {
+      width: var(--icon-circle-size);
+      height: var(--icon-circle-size);
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes circle {
+    from {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+
+    90% {
+      width: var(--icon-circle-size);
+      height: var(--icon-circle-size);
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  @-webkit-keyframes circles {
+    from {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+
+    40% {
+      opacity: 1;
+    }
+
+    to {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      opacity: 0;
+    }
+  }
+
+  @keyframes circles {
+    from {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+
+    40% {
+      opacity: 1;
+    }
+
+    to {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      opacity: 0;
+    }
+  }
+  /*-------------------------------------------save icon----------------------------*/
+  .ui-bookmark{
+    margin-top: -40px;
+  }
+  /*......................................Details.................................*/
+  .Details{
+    background-color: white;
+    width: 550px;
+    border-radius: 5px;
+  }
+  .Details p{
+    color: #000000;
+    padding-left: 0px;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-top: 10px;
+
+  }
+
+
+  .Details .profil-dt{
+    margin-left: 20px;
+
+  }
+  .spesific h2{
+    background-color: #ffffff;
+    margin-top: 0px;
+    color: #000000;
+    padding-left: 10px;
+  }
+  .Details .psv{
+    margin-left: 290px;
+
+  }
+  .Details .intres h2{
+    color: #000000;
+    margin-left: 40px;
+    padding: 20px;
+  }
+ .specific {
+    color: #000000;
+}
+
+.specific ul {
+    list-style: none;
+    padding: 0px; /* Remove default padding */
+    display: flex;
+
+}
+
+.specific li {
+    margin-right: 10px;
+    background-color: #56C4B7;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+
+
+.tit-job .profil-dt{
+    background-color: #56C4B7;
+     height: 40px;
+     width: 40px;
+
+  }
+  .tit-job{
+    margin-bottom: 40%;
+    margin-left: 60px;
+    color: #000000;
+
+  }
+  .tit-job h2{
+    margin-top: -30px ;
+    color: #000000;
+    margin-left: 80px;
+    margin-bottom: -20px;
+  }
+
+
+  /*----------------------------------------------------------state----------------------------------*/
+  .Details .stats {
+    margin-top: 10px;
+    color: #000000;
+
+}
+
+.titdt {
+
+    padding-left: 10px;
+}
+.prdt{
+  margin-left: -100px;
+
+}
+.Details .prdt ul {
+    list-style: none;
+   padding-right: -230px;
+    display: flex;
+    margin-top: 20px;
+    gap: 40px; /* Adjust the space between list items */
+
+}
+
+.prdt li {
+    margin-top: 50px;
+    padding-right: 40px;
+    white-space: nowrap;
+}
+/*----------------------------submit proposal -----------------------------------------*/
+.buttonsub{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0 107 179);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.buttonsub .icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonsub:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.buttonsub:hover .icon {
+  transform: translate(4px);
+}
+
+.buttonsub:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.buttonsub::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+.sbmprop .buttonsub{
+  margin-top: 70px;
+  margin-left: -160px;
+}
+
+/*----------------------------------------btn du submit proposale---------------------------------------*/
+.button {
+  position: relative;
+  width: 190px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(20px);
+  color: #fff;
+  font-weight: 500;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:40px;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background: #34974d;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #2e8644;
+}
+
+.button:active {
+  border: 1px solid #2e8644;
+}
+/*.....................................end of button.........................*/
+/*------------------------------------profile partie--------------------------*/
+.pro{
+  display: none;
+}
+.userprofilsection {
+
+  position: absolute;
+  padding-left: 170px;
+  margin-top: -702px;
+  width: 30%;
+  height: 40%;
+  border-radius: 10px;
+  margin-left: 450px;
+}
+
+.userprofilsection::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 120px;
+  width: 220px;
+  height: 100%;
+  background-color: rgb(255, 254, 254);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.userprofilsection .prfl-dt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 64px;
+}
+
+.userprofilsection .prfl-dt h4 {
+  white-space: nowrap;
+  text-decoration: none;
+  border-bottom: none;
+  color: #111;
+  margin: 10px 0 5px;
+  margin-left: -150px;
+}
+
+.userprofilsection .prfl-dt span {
+  white-space: nowrap;
+  padding: 5px;
+  color: #56C4B7;
+  font-size: 12px;
+  margin-left: -154px;
+}
+
+.userprofilsection .prfl-img {
+  width: 70px;
+  height: 70px;
+  background-color: #C2FCF3;
+  border-radius: 50%;
+  margin-top: 40px; /* Adjust as needed */
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+/*-------------------------------------------button of edit-------------------------------------------------------------------*/
+.btndtpr input {
+  background-color: #C2FCF3; /* Green */
+  border: none;
+  color: #111;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: bolder;
+  width: 190px;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 20px;
+  position: center;
+  margin-left: -160px;
+}
+/*------------------------------------END profile partie--------------------------*/
+/*-------------------------------------Availabilty parts-----------------------------*/
+.available{
+  position: absolute;
+  padding-left: 170px;
+  margin-top: -429px;
+  width: 30%;
+  height: 63%;
+  border-radius: 10px;
+  margin-left: 450px;
+}
+.available::before{
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 120px;
+  width: 220px;
+  height: 100%;
+  background-color: rgb(255, 254, 254);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.anv {
+  white-space: nowrap;
+  color: #fff;
+  background-color: #008E82;
+  padding: 5px 20px; /* Adjust as needed */
+  border-radius: 20px;
+  width: 160px;
+  margin-left: -40px;
+  margin-top: 10px;
+}
+
+.anv span {
+  color: white;
+}
+
+.available h4 {
+  white-space: nowrap;
+  margin-top: 19px;
+  color: #111;
+  margin-left: -30px;
+}
+.available h3{
+  white-space: nowrap;
+  margin-top: 29px;
+  color: #111;
+  margin-left: -30px;
+}
+.available p {
+  white-space: nowrap;
+  color: #56C4B7;
+  margin-left: -30px;
+}
+
+.tag__name {
+  display: inline-block;
+  color: #111;
+  font-size: 1.1em;
+  background-color: #C2FCF3;
+  padding: 6px 15px; /* Adjust as needed */
+  border-radius: 5px;
+  margin: 8px 0;
+  position: relative;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.tag__name::before,
+.tag__name::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.tag__name::before {
+  left: 7px;
+}
+
+.tag__name::after {
+  right: 7px;
+}
+
+.tag__name:hover {
+  transform: scale(1.1);
+  color: #111;
+  background-color: gainsboro;
+}
+
+.skilexpert{
+  margin-left: -30px;
+}
+.vprfl input{
+  margin-top: 20px;
+  margin-left: -30px;
+  background-color: #111; /* Green */
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: bolder;
+  width: 190px;
+  height: 40px;
+  border-radius: 4px;
+  position: center;
+}
+.barrnavsm{
+  display: none;
+}
+/*-------------------------------------END of Availabilty parts-----------------------------*/
+/*..............................................Responsivity part--------------------------*/
+/* Add your existing CSS rules above */
+
+
+@media screen and (max-width : 600px) {
+  .offer-details , .offer-details .details{
+    margin-top: 1rem;
+    width: 400px !important;
+  }
+}
+
+.job-postes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  height: 80vh;
+  min-width: 200px !important;
+  cursor: pointer !important;
+}
+.job-postes div{
+  cursor: pointer !important;
+}
+.offer-details{
+  position: relative;
+  background: #fff;
+  color: #000000;
+  max-width: 800px;
+  border-radius: 10px;
+  min-height: 80vh;
+  margin: 0 auto;
+}
+.offer-details .details{
+  min-height: 70vh;
+  width: 800px ;
+  background: #fff;
+  padding: 20px;
+}
+.float-left{
+  float: left !important;
+}
+.float-right{
+  float: right !important;
+}
+.not-yet{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cl{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer-search{
+  display: block;
+}

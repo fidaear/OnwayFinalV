@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;900&family=Open+Sans:ital,wght@0,400;1,800&display=swap');
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    --OpenSans : "Open Sans";
+    --SecondFont : "Monsterrat Alternates", sans-serif;
+    --pColor : #006B7B;
+    --sColor : #C2FCF3;
+    --tColor : #56C4B7;
+    --black : #2D2F30;
+}
+/* Navbar css */
+
+.spa {
+    max-width: 100%;
+}
+.spa .logodiv {
+    margin: 150px 0px;
+}
+.spa header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width:100%;
+    margin-top: 10px;
+    padding:20px 0px 0px 0px;
+    background-color: white
+}
+.spa header nav ul li {
+    display: inline-block;
+}
+.spa header nav ul li a {
+    font-family: var(--OpenSans);
+    color:#111;
+    font-size: 0.8rem;
+}
+
+/* Herosection css */
+
+.spa .herolayer {
+    margin-bottom:50px ;
+    background-image: url('/../assets/images/layer.png');
+    background-position: center;
+    background-size: cover;
+    height:90vh;
+}
+
+
+
+
+.spa .hero .textsection h1 {
+    font-family: var(--OpenSans);
+    color:var(--black);
+    margin-bottom: 50px;
+}
+
+
+.spa .hero .textsection p {
+    font-family: var(--OpenSans);
+    line-height: 2;
+    word-wrap: none;
+    word-spacing: 1px;
+
+    margin-bottom: 50px;
+
+}
+
+.spa .hero .textsection button {
+    border:none;
+    background-color: var(--pColor);
+    color:white;
+    padding:10px 35px;
+    font-family: var(--OpenSans);
+    font-weight: 700;
+
+}
+
+.spa .offer {
+    position: relative;
+    margin-bottom:100px ;
+    max-width:100%;
+    height:60vh;
+}
+
+.span .offer .textoffer div form {
+    background-color: red;
+}
+
+
+
+.spa .offer .imgoffer img {
+    z-index: 5;
+}
+
+
+
+
+.spa .offer .layeofferR {
+    z-index: -1;
+    width: 220px;
+    height: 390px;
+    position: absolute;
+    top:35px;
+    right:0;
+}
+.spa .offer .layeofferL {
+    z-index: -1;
+    width: 450px;
+    opacity: 30%;
+    height: 390px;
+    position: absolute;
+    top:35px;
+    left:0;
+}
+
+.spa  .headereview {
+    color:var(--black);
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: bolder;
+    font-family: var(--OpenSans);
+}

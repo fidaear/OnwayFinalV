@@ -1,0 +1,117 @@
+
+.login-content{
+    height: 92vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px;
+    padding: 10px;
+    background: #C2FCF3;
+}
+.login-content > div{
+    background: #fff;
+    border-radius: 10px;
+}
+
+.login-svg{
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 25;
+    border-radius: 40px !important; 
+}
+.svg{
+    background: url(../background/bg-1.jpg) #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    border-radius: 10px;
+}
+.login-form{
+    grid-column: 5;
+    grid-row: 1 / span 24;
+}
+.login-form form{
+    height: auto !important;
+}
+
+.login-form .login-form-picture{
+    height: 150px;
+}
+.login-form-picture img{
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background: #DDDDDD;
+    padding: 2px;
+    border: 2px solid #000;
+}
+.login-form h1{
+    text-align: center;
+    font-size: 2em;
+}
+.login-form button{
+    float: inline-end ;
+    padding: 10px 20px;
+    
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    grid-column: 5;
+    grid-row: 25;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+.footer-down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.footer-social-link{
+    margin: 0 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-social-link a{
+    margin: 0 10px;
+}
+.footer .copyright{
+    margin-right: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .login-form {
+      grid-column: 1 / span 5;
+      grid-row: 26 / 50;
+    }
+    .login-form button{
+        margin-bottom: 20px;
+    }
+    .login-svg{
+        grid-column: 1 / span 5;
+    }
+    .footer{
+        grid-column: 1 / 6;
+        grid-row: 50 ;
+        border-radius: 10px 10px 0 0 !important;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .login-content {
+      grid-template-columns: 1fr !important; 
+    }
+  }
+  
+  .register-dropdown{
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: inline !important;
+}

@@ -1,0 +1,31 @@
+
+body.dark-mode  .switch{
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .switch .form-control, .dark-mode .switch .form-select, .dark-mode .switch .dropdown-menu,.dark-mode .switch #addon-wrapping{
+    background: #1a1a1a;
+    color: #ffffff;
+    
+}
+.dark-mode .switch .dropdown-item:hover{
+    background: #006B7B;
+    color: #ffffff !important;
+}
+.dark-mode .switch input::placeholder{
+    color: #ffffff;
+}
+.dark-mode .switch .btn{
+    color: #ffffff !important;
+}
+
+.dark-mode .switch a{
+    color: #ffffff !important;
+}
+.dark-mode .switch a:hover{
+    color: #006B7B !important;
+}
+.dark-mode .switch .svg{
+    border: 3px solid #1a1a1a;
+}

@@ -1,0 +1,150 @@
+
+.job-seekers-register-content{
+    background: #C2FCF3;
+}
+.job-seekers-register-content > form{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 10px !important;
+    background: #C2FCF3;
+}
+.job-seekers-register-content > form > div{
+    background: #fff;
+    border-radius: 10px;
+}
+
+.personal{ 
+    grid-column: 1;
+    grid-row: 1 / span 8;
+}
+.js-register-form-picture{
+    height: 100px;
+}
+.js-register-form-picture img{
+    border: 2px  solid #000;
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+}
+.picture-register-upload{
+    position: relative;
+    border: 2px solid #000;
+    width: 100px;
+    height: 100px;
+    font-size: 1.8em;
+}
+.picture-register-upload input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+.picture-register-div{
+    width: 100px !important;
+    height: 100px !important;
+    border: 2px solid #000;
+    margin-left: 5px;
+}
+.picture-register-div img{
+    width: 95px !important;
+    height: 95px !important;
+}
+
+.skills{
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    padding: 20px;
+}
+
+.professional{
+    grid-column: 2;
+    grid-row: 3 / span 6;
+    padding: 20px;
+}
+.other{
+    grid-column: 3;
+    grid-row: 1 / span 8;
+    padding: 20px;
+}
+.cv-upload{
+    position: relative;
+    border: 2px solid #000;
+    width: 100%;
+    font-size: 1.1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px 0;
+}
+.cv-upload input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+}
+.cv-document{
+    border: 2px solid #000;
+    width: 120px !important;
+    height: 120px !important;
+    font-size: 1.7em;
+    overflow: hidden;
+}
+#output-container,#langue-container {
+    margin-top: 20px;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    min-height: 50px;
+}
+.output-item ,.langue-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: move;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px
+}
+.close-btn {
+    margin: 0 5px;
+    cursor: pointer;
+}  
+@media screen and (max-width: 1180px) {
+    .personal{
+        grid-column: 1 / span 2;
+    }
+    .skills{
+        grid-column: 3 / span 4;
+    }
+    .professional{
+        grid-column: 3 / span 4;
+    }
+    .other{
+        grid-column: 1 / span 4;
+        grid-row: 9;
+    }
+  }
+  select{
+    text-align: center;
+  }
+@media screen and (max-width: 840px) {
+    .personal{
+        grid-column: 1 / span 3;
+    }
+    .skills{
+        grid-column: 1 / span 3;
+        grid-row: 9 / span 16;
+    }
+    .professional{
+        grid-column: 1 / span 3;
+        grid-row: 25 / span 33;
+    }
+    .other{
+        grid-column: 1 / span 3;
+        grid-row: 58;
+    }
+  }
+  
