@@ -16,6 +16,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CommunityController;
 use App\Http\Controllers\JobSeekerController;
 use App\Http\Controllers\OfferController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\RecruiterController;
 use App\Models\Postulate;
 use App\Models\Recruiter;
@@ -56,7 +57,7 @@ Route::middleware(["auth"])->group(function() {
     Route::get('/career',function () {
         return view('career');
     })->name('career');
-
+    Route::resource('communitypost', PostController::class);
 });
 
 

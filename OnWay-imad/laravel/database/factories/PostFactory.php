@@ -30,6 +30,7 @@ class PostFactory extends Factory
         return [
             'post_id' => $faker->uuid(),
             'title' => $faker->name(),
+            'image' => $faker->imageUrl(640, 480, 'Onway', true),
             'description' => $faker->paragraph(),
             'user_id' => $user_id
         ];
