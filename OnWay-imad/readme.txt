@@ -1,4 +1,4 @@
-Hi Teacher, i hope you are doing well to start our project OnWay you have to follow those instructions:
+ i hope you are doing well to start our project OnWay you have to follow those instructions:
 
 first you will need to start local development server using this command : php artisan serve
 
